@@ -32,7 +32,7 @@ body {
 }
 
 .hero-banner {
-  background-image: url("../assets/banner.jpg");
+  background-image: url("/src/assets/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -97,7 +97,7 @@ body {
 
 @media (max-width: 767px) {
   .hero-banner {
-    background-image: url("../assets/NewProject.jpg");
+    background-image: url("/src/assets/NewProject.jpg");
     height: 956px;
   }
 
