@@ -1,3 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=My+Soul&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1441px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1921px) {
+  html {
+    font-size: 24px;
+  }
+}
+
 .btn-primary {
-    @apply mt-4 bg-blue-300 text-white py-2 px-4 rounded hover:bg-blue-900;
+  @apply mt-4 bg-blue-300 text-white py-2 px-4 rounded hover:bg-blue-900;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-banner {
+  background-image: url("../assets/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  z-index: -1;
+}
+
+.font-mysoul {
+  font-family: "My Soul", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.text-shadow-custom {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.baner-reating-box {
+  @apply p-3 bg-white flex justify-between rounded-md w-[25rem] mt-[3.125rem];
+}
+
+.banner-text-body {
+  @apply mt-[3.75rem] w-[31.25rem];
+}
+
+.banner-heading {
+  @apply text-5xl font-bold;
+}
+
+.heading-text {
+  @apply text-lg mt-[1.25rem];
+}
+
+.banner-white-box {
+  @apply rounded-[1.25rem] bg-white p-6 absolute w-[25rem] bottom-7 right-0 shadow-inner;
+}
+
+.banner-white-box .text {
+  @apply text-lg;
+}
+
+.page-md {
+  @apply relative container mx-auto h-[18.75rem] flex justify-end items-center;
+}
+
+.page-md .left {
+  @apply shadow-md p-[1.25rem] rounded-md absolute w-[34.375rem] top-[-3.75rem] left-0 bg-white;
+}
+
+.page-md .right {
+  @apply p-4 w-[15.625rem] rounded-md shadow-md bg-blue-50;
+}
+
+.end-section {
+  @apply flex items-center p-6 justify-between;
+}
+
+.end-section .image-section {
+  @apply w-[28.125rem] h-[31.25rem] overflow-hidden rounded-[0.625rem];
+}
+
+@media (max-width: 767px) {
+  .hero-banner {
+    background-image: url("../assets/NewProject.jpg");
+    height: 956px;
+  }
+
+  .d-none {
+    display: none;
+  }
+
+  .center-text {
+    text-align: center;
+  }
+
+  .width-full {
+    width: 100%;
+  }
+
+  .baner-reating-box {
+    @apply w-[100%] mt-[1.125rem] p-4 flex-col items-center gap-4;
+  }
+
+  .banner-text-body {
+    @apply mt-[1.35rem];
+  }
+
+  .banner-heading {
+    font-size: 3rem;
+    @apply text-center;
+  }
+
+  .heading-text {
+    @apply text-center;
+    font-size: 1.8rem;
+    line-height: 35px;
+  }
+
+  .banner-white-box {
+    @apply p-4 absolute w-[20rem] bottom-10 right-0;
+  }
+
+  .banner-white-box .text {
+    @apply text-xs;
+  }
+
+  .page-md {
+    @apply relative container mx-auto h-[auto] flex justify-start items-center flex-col gap-[20px];
+  }
+
+  .page-md .left {
+    position: inherit;
+    height: auto;
+    top: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .page-md .right {
+    width: 100%;
+
+    @apply flex justify-between items-center;
+  }
+
+  .end-section {
+    @apply flex-col gap-[20px];
+  }
+
+  .end-section .image-section {
+    @apply w-[100%] h-[auto];
+  }
+
+  .end-section .text-section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .end-section .text-section h2 {
+    @apply text-3xl;
+  }
 }

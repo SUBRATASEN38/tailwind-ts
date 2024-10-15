@@ -1,22 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind + TypeScript</title>
-    <link href="./dist/css/tailwind.css" rel="stylesheet">
-    <link href="./dist/css/index.css" rel="stylesheet">
-</head>
+    <link href="./dist/css/tailwind.css" rel="stylesheet" />
+    <link href="./dist/css/index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body class="bg-gray-100 text-gray-800">
-    <div class="container mx-auto p-4">
-        <h1 class="text-4xl font-bold text-center">Tailwind CSS with TypeScript</h1>
-        <button id="clickMeBtn" class="btn-primary">
-            Click Me
-        </button>
+  <body class="bg-gray-100 text-gray-800">
+    <div class="p-4">
+      <div class="p-[3.125rem] hero-banner rounded-[0.6875rem] shadow-md">
+        <div class="container mx-auto relative h-full">
+          <div class="banner-text-body width-full">
+            <h1 class="banner-heading">Global Passport and Visa Experts</h1>
+            <p class="heading-text">
+              Making travel easy for over 4 million happy<br class="d-none" />
+              customers in 160 countries since 1992.
+            </p>
+            <div class="baner-reating-box">
+              <p class="md:text-sm text-green-700 sm:text-lg">
+                <span><i class="fa-solid fa-star"></i></span>
+                Trustpilot
+              </p>
+              <p class="md:text-sm sm:text-lg">4.1/5 based on 11,484 reviews</p>
+            </div>
+          </div>
+          <div class="banner-white-box">
+            <p class="text">
+              "Within two hours of contacting Passports and Visas.com, Mr.
+              Milton's application was completed and dispatched to his passport
+              agency. Less than 48 hours later, his passport was ready to pick
+              up."
+            </p>
+            <h3 class="text-xl font-mysoul mt-6">The New York Times</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-md">
+        <div class="left">
+          <h1 class="text-3xl mb-4 font-bold">About Passports and Visas.com</h1>
+          <p class="text-sm mb-2">
+            Passports and Visas.com aspires to improve the experience with
+            obtaining travel documents globally including US passports, travel
+            visas, e-visas, and passport photos.
+          </p>
+          <p class="text-sm">
+            Our team assists retail customers, travel agents, study abroad
+            programs, and corporate travel services. We understand the anxiety
+            and frustration that can be associated with completing complex
+            documents and dealing with the red tape often associated with these
+            documents.
+          </p>
+        </div>
+        <div class="right">
+          <div>
+            <h2 class="text-2xl font-bold">4 Million+</h2>
+            <p class="text-sm text-gray-500 mt-2">happy customers</p>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold mt-6">160</h2>
+            <p class="text-sm text-gray-500 mt-2">countries</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto">
+        <div class="end-section">
+          <!-- Image Section -->
+          <div class="image-section">
+            <img
+              src="./src/assets/pexels-rickyrecap-2383277.jpg"
+              alt="City skyline"
+              class="w-full h-full"
+            />
+          </div>
+
+          <!-- Text Section -->
+          <div class="w-1/2 pl-6 text-section">
+            <h2 class="text-4xl font-bold text-gray-800 text-shadow-custom">
+              Growing Strong Since 1992: <br class="d-none" />
+              From Atlanta Roots to Global <br class="d-none" />Reach
+            </h2>
+            <p class="text-gray-600 mt-4 text-lg text-shadow-custom">
+              Founded in 1992 in Atlanta, Georgia with one location and growing
+              to an online presence with PassportsandVisas.com in 2000 and
+              growing organically since then adding additional offices to serve
+              our customers' needs in cities like Los Angeles, Denver, Miami,
+              Washington DC, and Las Vegas.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./dist/js/app.js"></script>
-</body>
-
+  </body>
 </html>
